@@ -1,0 +1,151 @@
+.Cabecera {
+    text-align: center;
+}
+
+header{
+    height: 450px;
+}
+
+video {    
+    min-width: 20%;
+    min-height: 20%;
+    position: fixed;    
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-60%); 
+   
+    z-index: -100;
+   
+    background-size: auto;
+   
+  }
+
+
+header p {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+}
+
+header i{
+    font-size: 45px;
+    border: whitesmoke solid;
+    border-radius: 100%;
+    padding: 0.6em;
+    margin: 0.4em;
+}
+
+/*
+footer {
+    background: #1b1b1f;
+    color: white;
+}*/
+
+body{
+    font-family: 'Oxygen', sans-serif;
+    background: #202024;
+    color: white;
+}
+
+/*Mano a llamar el contenedor grid (en este caso es section, pero le puse una clase grid)*/
+.Grid{
+    margin-left: 12em;
+    margin-right: 12em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    /*Afectará por tanto a sus hijos directos*/
+    display: grid;
+    /*Necesito tres columnas y dos filas*/
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    /*Y una separación entre las mismas que se las doy con grid-column/row-gap*/
+    grid-row-gap: 2em;
+    grid-column-gap: 2em;
+
+
+}
+
+/*Tengo que afectar a figure, pues lo contiene el div...*/
+figure{
+    margin: 0%;
+}
+
+
+
+
+img{
+    width: 100%;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    object-fit: cover;
+}
+
+.bloque{
+    background: #2c2c32;
+
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bloque p, button{
+    padding: 16px;
+    margin: 16px;
+}
+
+button{
+    border: none;
+    border-radius: 25px;
+    width: 80%;
+    background: white;
+    color: white;
+}
+
+.B1{
+    background: #70c7be;
+}
+
+.B2{
+    background: #7f92cf;
+}
+
+.B3{
+    background: #9d7ed0;
+}
+
+footer {
+    background: #1b1b1f;
+    /*Para aplicar el flex, necesito un display flex...*/
+    display: flex;
+    /*Ahora ya lo puedo mover a mi gusto*/
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+}
+
+footer div{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
+
+footer div i{
+    font-size: 45px;
+    border: whitesmoke solid;
+    border-radius: 100%;
+    padding: 0.6em;
+    margin: 0.4em;
+}
+
+footer small a{
+    text-decoration-style: dotted;
+    text-decoration-color: azure;
+    color: azure;
+}
